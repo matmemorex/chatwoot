@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.1].define(version: 2026_01_20_121402) do
   enable_extension "vector"
 
   create_table "access_tokens", force: :cascade do |t|
-    t.string "owner_type"
+    t.string "owner_type" 
     t.bigint "owner_id"
     t.string "token"
     t.datetime "created_at", null: false
